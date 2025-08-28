@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: 'Markdisc';
+    src: url('../fonts/markdisc-regular.otf') format('truetype');
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+    color: #171717;
+    background-color: #EDEDED;
+}
+
+p {
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    /* height: 8vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 10;
+    padding-right: 20px;
+}
+
+#fate_icon {
+    height: 7vh;
+    background-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    padding: 12px 20px;
+    border-bottom-right-radius: 16px;
+}
+
+#nav_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: transparent;
+}
+
+.navbar li {
+    padding: 10px 12px;
+    list-style-type: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: transparent;
+}
+
+.navbar a {
+    text-decoration: none;
+    background-color: transparent;
+    font-family: 'Markdisc';
+    color: #DA0037;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 92vh;
+    position: relative;
+    padding: 0px 100px;
+}
+
+.title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.title h1 {
+    font-family: 'Markdisc';
+    font-size: 100px;
+    text-align: left;
+    pointer-events: none;
+    background-color: transparent;
+    width: 100%;
+    margin: 0 75px;
+    letter-spacing: -5px;
+    color: #DA0037;
+
+}
+
+.title h3 {
+    font-family: 'Markdisc';
+    z-index: 1;
+    font-size: 50px;
+    text-align: left;
+    pointer-events: none;
+    background-color: transparent;
+    width: 100%;
+    margin: 0 90px;
+    letter-spacing: -8px;
+    /* color: #DA0037 */
+}
+
+#quote {
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.quotation {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.welcome_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.welcome_content {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 88px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+#saber_alter {
+    height: 100vh;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.bold {
+    font-weight: bold;
+    color: #DA0037;
+}
+
+.saber_figure {
+    height: 50vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    padding: 12px 22px;
+}
+
+.article {
+    flex: 2;
+}
+
+/* .aside {
+    flex: auto;
+} */
