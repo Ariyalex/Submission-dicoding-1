@@ -187,5 +187,25 @@ function renderArticles(articles, containerSelector) {
     })
 }
 
+
+
+// Hamburger menu logic
+var burgerMenu = document.getElementById('burger_menu');
+var menu = document.querySelector('.menu');
+
+burgerMenu.addEventListener('click', function () {
+    this.classList.toggle('close');
+    menu.classList.toggle('overlay');
+});
+
+// Close menu when clicking navigation links
+var navLinks = document.querySelectorAll('.menu a');
+navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+        burgerMenu.classList.remove('close');
+        menu.classList.remove('overlay');
+    });
+});
+
 renderArticles(articleData, '.article');
 

@@ -42,6 +42,7 @@ header {
     background-color: transparent;
     z-index: 10;
     padding-right: 20px;
+    height: 60px;
 }
 
 #fate_icon {
@@ -52,6 +53,21 @@ header {
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
 }
+
+#burger_menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    color: #DA0037;
+    background-color: transparent;
+    border: none;
+}
+
+#burger_menu:hover {
+    color: #ff0044;
+}
+
 
 .navbar {
     display: flex;
@@ -95,8 +111,7 @@ header {
 .welcome {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100vw;
     height: 92vh;
     position: relative;
@@ -127,7 +142,6 @@ header {
     margin: 0 75px;
     letter-spacing: -5px;
     color: #DA0037;
-
 }
 
 .title h3 {
@@ -140,7 +154,6 @@ header {
     width: 100%;
     margin: 0 90px;
     letter-spacing: -8px;
-    /* color: #DA0037 */
 }
 
 #quote {
@@ -182,6 +195,10 @@ header {
     height: 100vh;
     background-color: transparent;
     z-index: 2;
+}
+
+.menu {
+    background-color: transparent;
 }
 
 .bold {
@@ -286,3 +303,153 @@ footer {
 footer p {
     color: #EDEDED;
 }
+
+
+
+@media screen and (max-width: 1400px) {
+    .title h1 {
+         font-size: 75px;
+         margin: 0 50px;
+    }
+
+    .welcome_content {
+        padding-bottom: 20px;
+    }
+
+    .welcome {
+        padding: 0 70px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #saber_alter {
+    height: 85vh;
+    }
+
+    .welcome {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .welcome {
+        height: auto;
+        padding: 0 25px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .title {
+        width: 50%;
+        left: 24%;
+        top: 150px;
+    }
+
+    .title h1 {
+         font-size: 50px;
+         margin: 0 12px;
+    }
+
+    .title h3 {
+        font-size: 28px;
+        margin: 0 12px;
+        letter-spacing: 0px;
+    }
+
+    #content_1 {
+        order: 2;
+    }
+
+    .welcome_content {
+        z-index: 2;
+        gap: 35px;
+        background-color: transparent;
+    }
+
+    #saber_alter {
+        order:  1;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #burger_menu {
+        display: block;
+    }
+
+    header {
+        background-color: #EDEDED;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        background-color: #EDEDED;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 99;
+    }
+    
+    .menu.overlay {
+        display: block;
+    }
+    
+    .menu #nav_list {
+        flex-direction: column;
+        padding: 20px 0;
+        backdrop-filter: blur(12px);
+    }
+    
+    .menu .navbar li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .title {
+        width: 100%;
+        left: 50%;
+    }
+
+    .title h1 {
+         font-size: 75px;
+         margin: 0 12px;
+    }
+
+    .title h3 {
+        font-size: 35px;
+        margin: 0 12px;
+        letter-spacing: 0px;
+    }
+
+    #saber_alter {
+        order:  1;
+        padding-right: 0;
+    }
+} 
+
+@media screen and (max-width: 615px) {
+    .title h1 {
+         font-size: 52px;
+         margin: 0 12px;
+    }
+
+    .title h3 {
+        font-size: 25px;
+        margin: 0 12px;
+        letter-spacing: 0px;
+    }
+}
+

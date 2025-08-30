@@ -11,14 +11,19 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul id="nav_list">
-                <li><a href="#profile">PROFILE</a></li>
-                <li><a href="#personality">PERSONALITY</a></li>
-                <li><a href="#abilities">ABILITIES</a></li>
-                <li><a href="#noble_phantasm">NOBEL PHANTASM</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <a id="burger_menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav class="menu">
+                <ul id="nav_list">
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#personality">PERSONALITY</a></li>
+                    <li><a href="#abilities">ABILITIES</a></li>
+                    <li><a href="#noble_phantasm">NOBEL PHANTASM</a></li>
+                </ul>
+            </nav>
+        </div>
         <a href="#"><img id="fate_icon" src="images/fate_icon.webp" alt="fate series"></a>
     </header>
 
@@ -29,7 +34,7 @@
                     <h3>アルトリア・ペンドラゴン</h3>
                     <h1>ARTORIA PENDRAGON</h1>
                 </div>
-                <div class="welcome_content">
+                <div class="welcome_content" id="content_1">
                     <div>
                         <p id="quote" class="text-right">
                             <span class="quotation">"</span>The rising sun, reversed, strikes down the dragon. The
@@ -40,17 +45,21 @@
                         <p class="bold text-right">-Saber Alter-</p>
                     </div>
                     <div>
-                        <p class="text-right">Corrupted by the curse of the Holy Grail, this is the merciless side of
-                            the <span class="bold">King of Knights</span>.
-                            Or perhaps this is the true nature of the "Ideal King" that King Arthur sought to be.
-                            Altria controlled her own power and held back, but in this state, she wields her immense
-                            power without hesitation.</p>
+                        <p>
+                            <span class="bold">Altria</span> never took the path of evil in her life. But she did have
+                            doubts, worries, anger at
+                            herself, and sorrow for those around her. This form is where the curse made those thoughts
+                            surface, and completely reversed her
+                            "principles". Her objective and her ideals have not changed.
+                            Normally Altria is kind and just, but this
+                            Altria feels that oppression is also a path to obtain her ideals.
+                        </p>
                     </div>
                 </div>
                 <div class="welcome_images">
                     <img id="saber_alter" src="images/saber_alter.png" alt="saber alter">
                 </div>
-                <div class="welcome_content">
+                <div class="welcome_content" id="content_2">
                     <p>
                         <span class="bold">Artoria Pendragon (Alter)</span> (アルトリア・ペンドラゴン・オルタ), Class Name Saber Alter
                         (セイバー・オルタ, Seibā Oruta),
@@ -60,14 +69,11 @@
                         the Grand Orders of Fate/Grand Order.
                     </p>
                     <div>
-                        <p>
-                            <span class="bold">Altria</span> never took the path of evil in her life. But she did have
-                            doubts, worries, anger at
-                            herself, and sorrow for those around her. This form is where the curse made those thoughts
-                            surface, and completely reversed her
-                            "principles". Her objective and her ideals have not changed.
-                            Normally Altria is kind and just, but this
-                            Altria feels that oppression is also a path to obtain her ideals.
+                        <p class="text-right">Corrupted by the curse of the Holy Grail, this is the merciless side of
+                            the <span class="bold">King of Knights</span>.
+                            Or perhaps this is the true nature of the "Ideal King" that King Arthur sought to be.
+                            Altria controlled her own power and held back, but in this state, she wields her immense
+                            power without hesitation.
                         </p>
                     </div>
                 </div>
@@ -166,7 +172,10 @@
         <footer>
             <p>Tugas Akhir Dicoding Pemrograman Web &#169; 2023</p>
         </footer>
+
         <script src="script/script.js"></script>
+        <script src="https://kit.fontawesome.com/385cd213ed.js" crossorigin="anonymous"></script>
+
     </body>
 
 </html>
