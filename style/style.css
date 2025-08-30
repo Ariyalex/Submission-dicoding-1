@@ -421,6 +421,7 @@ footer p {
     .title {
         width: 100%;
         left: 50%;
+        top: 110px;
     }
 
     .title h1 {
@@ -450,6 +451,16 @@ footer p {
         font-size: 25px;
         margin: 0 12px;
         letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title h1 {
+         font-size: 46px;
+    }
+
+    #saber_alter {
+    height: 75vh;
     }
 }
 
