@@ -156,6 +156,7 @@ const articleData = [
     }
 ];
 
+//looping to create articles
 function renderArticles(articles, containerSelector) {
     //get parent element
     const articleContainer = document.querySelector(containerSelector);
@@ -207,5 +208,6 @@ navLinks.forEach(function (link) {
     });
 });
 
+//run the function
 renderArticles(articleData, '.article');
 
