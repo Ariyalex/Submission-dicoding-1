@@ -10,12 +10,18 @@
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
     color: #171717;
     background-color: #EDEDED;
 }
 
 p {
     margin: 0;
+    background-color: transparent;
+}
+
+a {
+    background-color: transparent;
 }
 
 body{
@@ -27,7 +33,6 @@ body{
 }
 
 header {
-    /* height: 8vh; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,7 +46,11 @@ header {
 
 #fate_icon {
     height: 7vh;
+    padding: 0 12px;
     background-color: transparent;
+    backdrop-filter: blur(12px);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 
 .navbar {
@@ -52,7 +61,7 @@ header {
     height: 100%;
     background-color: transparent;
     backdrop-filter: blur(12px);
-    padding: 12px 20px;
+    padding: 8px 20px;
     border-bottom-right-radius: 16px;
 }
 
@@ -60,7 +69,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -180,8 +189,15 @@ header {
     color: #DA0037;
 }
 
+.title_bold {
+    font-weight: bold;
+    color: #DA0037;
+    font-family: 'Markdisc';
+    margin: 0;
+}
+
 .saber_figure {
-    height: 50vh;
+    height: 60vh;
 }
 
 .content {
@@ -191,10 +207,82 @@ header {
     padding: 12px 22px;
 }
 
+.divider_content {
+    height: 20px;
+    background-color: #DA0037;
+    margin-top: 16px;
+    border-radius: 12px;
+}
+
 .article {
     flex: 2;
 }
 
-/* .aside {
-    flex: auto;
-} */
+.article_item h2 {
+    font-family: 'Markdisc';
+    font-weight: bold;
+    color: #DA0037;
+}
+
+.aside {
+    border: 2px solid #171717;
+    border-radius: 8px;
+    padding: 6px 0px;
+    height: fit-content;
+}
+
+.aside figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside figure h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.table-title {
+    text-align: center;
+    background-color: #171717;
+    color: #EDEDED;
+    padding: 8px 0;
+    margin-bottom: 12px;
+}
+
+.table-title h3 {
+    background-color: #171717;
+    color: #EDEDED;
+    text-align: center;
+    margin: 0;
+    font-family: 'Markdisc';
+}
+
+.aside table {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.aside table th, .aside table td {
+    text-align: left;
+    vertical-align: top;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #444444;
+    color: transparent;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer p {
+    color: #EDEDED;
+}

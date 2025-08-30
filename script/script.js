@@ -2,8 +2,9 @@
 //data article
 const articleData = [
     {
-        title: "Profile",
-        content: `Also called Artoria Alter (アルトリア・オルタ, Arutoria Oruta) and better known as Arthur
+        title: "PROFILE",
+        id: "profile",
+        content: `Also called <span class="bold">Artoria Alter</span> (アルトリア・オルタ, Arutoria Oruta) and better known as Arthur
                             Pendragon/King Arthur. In history, he/she is a different figure that may not have been known
                             to others as possibly being the legendary King Arthur himself. Accompanied with her
                             inversion, the holy sword Excalibur is also dyed in the attribute of evil, turning into a
@@ -17,7 +18,8 @@ const articleData = [
                             Arthur.`,
     },
     {
-        title: "Personality",
+        title: "PERSONALITY",
+        id: "personality",
         content: `A different aspect of the King of Knights devoted to cruelty, greatly unlike the case of the
                             normal Artoria. She is referred to as Saber Alter. A behavior without futility, a
                             cold-hearted personality that makes Artoria seem like a different person, but if one is to
@@ -28,7 +30,7 @@ const articleData = [
                             Angra Mainyu, but she cannot be called a villain. She is more of a dark hero who is still an
                             idealist clinging to her own values even after being blackened.
                             <br><br>
-                            After taking in by the hatred of the curse, Artoria Alter comes to the realization that the
+                            After taking in by the hatred of the curse, <span class="bold">Artoria Alter</span> comes to the realization that the
                             duty of a hero is to be hated and ostracized, that a hero's only duty is to cut down foes
                             using all their strength. She believes that she was prepared for such an outcome upon
                             drawing Caliburn, and decides to entrust her blade to All the World's Evils. While she still
@@ -54,7 +56,7 @@ const articleData = [
                             a tyrant that persisted in being heartless. Maybe, the "ideal king" that King Arthur pursued
                             was something like this after all.
                             <br><br>
-                            Maybe because her Magic Core goes outside the scale, but at any rate, Artoria Alter is a
+                            Maybe because her Magic Core goes outside the scale, but at any rate, <span class="bold">Artoria Alter</span> is a
                             Servant that eats a lot. The dragon is a glutton. In addition, even her food preferences,
                             which could be regarded as her identity, have changed: she spits out cooking with courteous,
                             elaborate, abstruse tastes as bad and chews down large quantities of junk food. A new
@@ -73,19 +75,20 @@ const articleData = [
                             approach to guiding and understanding the Master is certainly Artoria Pendragon's. In
                             addition, in the world of Fate/Grand Order, her existence as a Servant is separate from
                             Artoria Pendragon's, and Artoria is no longer consumed by the blackening caused by the curse
-                            of the Holy Grail. Probably due to the fact that Artoria Alter only exist in the Heaven's
+                            of the Holy Grail. Probably due to the fact that <span class="bold">Artoria Alter</span> only exist in the Heaven's
                             Feel timeline where Shirou chooses Sakura and that Artoria herself has already ascended to
                             Avalon during the Fate timeline which was confirmed by Merlin himself.
                             <br><br>
-                            Artoria Alter is mostly emotionless towards the situation of Shirou, Rin, and Sakura. While
+                            <span class="bold">Artoria Alter</span> is mostly emotionless towards the situation of Shirou, Rin, and Sakura. While
                             she seems to hold favor for Shirou and Rin coming out victorious, she is largely apathetic
                             towards the entire situation. In the case of the battle going wrong, she doesn't care about
                             the victor and can only hold a slight amount of pity towards those left alive. She feels a
                             connection to Sakura as someone who has felt similar despair.`
     },
     {
-        title: "Abilities",
-        content: `After being blackened, her magic reactor grew outside the scale, greatly increasing her
+        title: "ABILITIES",
+        id: "abilities",
+        content: `After being blackened, <span class="bold">Artoria Alter</span> magic reactor grew outside the scale, greatly increasing her
                             Magical Energy consumption. However, thanks to being Sakura's Servant, she was provided
                             with her enormous magical energy supply. Whereas Artoria used to contain her own
                             power, due to her past Masters usually being unable to provide her with sufficient
@@ -101,10 +104,11 @@ const articleData = [
 
     },
     {
-        title: "Noble Phantasm",
+        title: "NOBLE PHANTASM",
+        id: "noble_phantasm",
         content: `In this form, Artoria still wields Excalibur. Due to the nature of this Divine Construct as
                             a “sword that amplifies”, when Saber was blackened, Excalibur blackened with her, becoming
-                            known as Excalibur Morgan. In this state, the fact that it is the strongest holy sword does
+                            known as <span class="bold">Excalibur Morgan</span>. In this state, the fact that it is the strongest holy sword does
                             not change, and it can be considered even more dangerous than its regular counterpart due to
                             Artoria wielding it to her heart's content, without controlling her own magical energy. As
                             such, to beat Saber Alter in a one on one duel, her opponent would need to be a skilled user
@@ -114,7 +118,7 @@ const articleData = [
                             Thanks to this, after Saber was blackened in the Fuyuki Singularity, she began rampaging
                             like a tiger released from a cage, defeating EMIYA, Benkei, Medusa, Heracles and Hassan of
                             the Cursed Arm by herself.<br><br>
-                            In her fight against Medusa, Excalibur Morgan managed to offset ninety percent of
+                            In her fight against Medusa, <span class="bold">Excalibur Morgan</span> managed to offset ninety percent of
                             Bellerophon in less than an instant, despite Medusa's Mystic Eyes producing a rank down on
                             all of Artoria's abilities. Saber's holy sword would normally have no trouble vaporizing
                             Medusa's trump card, however, Shirou was able to aid her by making up for the difference
@@ -125,7 +129,7 @@ const articleData = [
                             In her fight against Caster Cú Chulainn and Mash, Saber Alter lost due to her tenacity
                             wavering. Since she stayed her hand at the last moment right before firing her Noble
                             Phantasm, Mash managed to block it with Lord Chaldeas allowing Cú to finish Saber off with
-                            Wicker Man. Even in this weakened state, Excalibur Morgan remains extremely powerful, as
+                            Wicker Man. Even in this weakened state, <span class="bold">Excalibur Morgan</span> remains extremely powerful, as
                             even after Altera absorbed a Holy Grail in the Septem Singularity and fired her Teardrop
                             Photon Ray, its tremendous magical energy only reminded Mash of the sacred sword they saw in
                             Fuyuki. Mash also stated that Lord Chaldeas wouldn't have been able to block it on its own,
@@ -161,11 +165,15 @@ function renderArticles(articles, containerSelector) {
     articles.forEach(data => {
         //create element article and add class "article-item" to this element
         const article = document.createElement('article');
-        article.classList.add('article-item');
+        article.classList.add('article_item');
+        article.id = data.id;
 
         //create element h2 and add h2 content with data title
         const h2 = document.createElement('h2');
         h2.textContent = data.title;
+
+        const divider = document.createElement('div');
+        divider.classList.add('divider_content')
 
         //create element p and add innerHTML content inside p
         const p = document.createElement('p');
@@ -174,6 +182,7 @@ function renderArticles(articles, containerSelector) {
         //append h2 and p to article then append article to articleContainer
         article.appendChild(h2);
         article.appendChild(p);
+        article.appendChild(divider);
         articleContainer.appendChild(article);
     })
 }
